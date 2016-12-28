@@ -48,11 +48,11 @@ header {
 }
 
 h2, h4 {
-    font-weight: 300!important;
+    font-weight: 300;
 }
 
 strong {
-    font-weight: 500!important;
+    font-weight: 500;
 }
 
 .text-padding {
@@ -268,6 +268,12 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
 
 
 /* MailChimp End */
+
+footer img {
+  display: block;
+  margin: auto;
+  height: 100px;
+}
 
 footer h1 {
     color: #FFFFFF;
