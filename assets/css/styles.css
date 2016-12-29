@@ -17,7 +17,11 @@ nav {
 }
 
 .brand-centered {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     position: absolute;
     width: 100%;
@@ -26,13 +30,17 @@ nav {
 }
 
 .brand-centered .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .logo {
     vertical-align: middle!important;
-    padding-top:10px!important;
+    padding-top: 10px!important;
 }
 
 header {
@@ -106,10 +114,16 @@ figure img {
 }
 
 .feature-summary {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     /*justify-content: space-between;*/
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
     align-items: stretch;
 }
 
@@ -146,8 +160,6 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
     /*font-size: 15px;*/
     font-size: 18px;
     border: 1px solid #ABB0B2;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
     color: #343434;
     background-color: #fff;
@@ -179,8 +191,6 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
     /*font-size: 13px;*/
     font-size: 18px;
     border: none;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
     letter-spacing: .03em;
     color: #fff;
@@ -193,6 +203,7 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
     padding: 0 18px;
     display: inline-block;
     margin: 0;
+    -webkit-transition: all 0.23s ease-in-out 0s;
     transition: all 0.23s ease-in-out 0s;
 }
 
@@ -270,9 +281,9 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
 /* MailChimp End */
 
 footer img {
-  display: block;
-  margin: auto;
-  height: 100px;
+    display: block;
+    margin: auto;
+    height: 100px;
 }
 
 footer h1 {
@@ -338,6 +349,8 @@ footer h3 {
         padding-left: 10px!important;
     }
     .feature-summary {
+        -webkit-box-pack: center!important;
+        -ms-flex-pack: center!important;
         justify-content: center!important;
     }
     .hidden-br {
@@ -361,6 +374,8 @@ footer h3 {
         padding-left: 10px!important;
     }
     .feature-summary {
+        -webkit-box-pack: center!important;
+        -ms-flex-pack: center!important;
         justify-content: center!important;
     }
     .figure-seperation {
