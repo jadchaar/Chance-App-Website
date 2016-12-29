@@ -169,7 +169,8 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
     padding: 0px 0.4em;
     display: inline-block;
     margin: 0;
-    width: 350px;
+    /*width: 350px;*/
+    width: 30%;
     vertical-align: top;
 }
 
@@ -180,7 +181,7 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
     font-weight: bold;
 }
 
-#mc_embed_signup .clear {
+#mc_embed_signup {
     display: inline-block;
 }
 
@@ -201,6 +202,8 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
     height: 48px;
     line-height: 48px;
     padding: 0 18px;
+    /* Add width to match textbox */
+    width: 30%;
     display: inline-block;
     margin: 0;
     -webkit-transition: all 0.23s ease-in-out 0s;
@@ -255,7 +258,7 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
         width: 80%;
         margin-bottom: 5px;
     }
-    #mc_embed_signup .clear {
+    #mc_embed_signup {
         display: block;
         width: 100%
     }
@@ -299,25 +302,23 @@ footer h3 {
 }
 
 
-/*footer {
-    background-color: #4FB7FC;
-    height: 250px;
-    width: 100%;
-    padding: 30px;
+/* Submission Page Styling BEGINS */
+
+.submission-page-text {
+    font-size: 48px!important;
+    text-align: center;
+    padding-top: 50px;
+    color: #4FB7FC!important;
 }
 
-footer h1 {
-    color: #FFFFFF;
+#robot-submission {
+    height: 150px;
 }
 
-footer h3 {
-    color: #FFFFFF;
-}
-
-.form-style {
-    width: 25%;
-    margin: 0 auto;
-    float: none;
+#submission-body {
+    background-image: url(../images/confirmation-background.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
 }
 
 .btn {
@@ -326,9 +327,14 @@ footer h3 {
     border-color: #FD7E81;
 }
 
-.form-control {
-    border: 0;
-}*/
+.btn:hover {
+    background-color: #e7686b;
+    color: #FFFFFF;
+    border-color: #e7686b;
+}
+
+
+/* Submission Page Styling ENDS */
 
 @media only screen and (max-width:768px) and (orientation: portrait) {
     header {
@@ -338,12 +344,6 @@ footer h3 {
     .small_screen_side_padding {
         padding: 25px!important;
     }
-    /*.form-style {
-        width: 80%!important;
-    }
-    footer {
-        height: 300px!important;
-    }*/
     .heart-images {
         height: 75px!important;
         padding-left: 10px!important;
@@ -366,9 +366,6 @@ footer h3 {
 }
 
 @media only screen and (max-width:768px) and (orientation: landscape) {
-    /*.form-style {
-        width: 50%!important;
-    }*/
     .heart-images {
         height: 100px!important;
         padding-left: 10px!important;

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1270px" height="93px" viewBox="0 0 1270 93" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(-249.000000, -41.000000)">
+            <ellipse id="Oval-3" fill="#49B6FF" cx="872.843196" cy="167" rx="201.380304" ry="111"></ellipse>
+            <ellipse id="Oval-5" fill="#FF7C7F" cx="1484.79387" cy="167.5" rx="117.146437" ry="124.5"></ellipse>
+            <ellipse id="Oval-4" fill="#FF7C7F" cx="1131.68104" cy="181.5" rx="174.603976" ry="114.5"></ellipse>
+            <ellipse id="Oval-6" fill="#49B6FF" cx="1343.66031" cy="152" rx="99.8533919" ry="64"></ellipse>
+            <ellipse id="Oval-5" fill="#FF7C7F" transform="translate(283.206128, 165.500000) scale(-1, 1) translate(-283.206128, -165.500000) " cx="283.206128" cy="165.5" rx="117.146437" ry="124.5"></ellipse>
+            <ellipse id="Oval-4" fill="#FF7C7F" transform="translate(636.318961, 179.500000) scale(-1, 1) translate(-636.318961, -179.500000) " cx="636.318961" cy="179.5" rx="174.603976" ry="114.5"></ellipse>
+            <ellipse id="Oval-6" fill="#49B6FF" transform="translate(424.339693, 150.000000) scale(-1, 1) translate(-424.339693, -150.000000) " cx="424.339693" cy="150" rx="99.8533919" ry="64"></ellipse>
+            <path d="M249,134 L1519,134 L1519,0 L1768,0 L1768,296 L1643.5,296 L124.5,296 L0,296 L0,0 L249,0 L249,134 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>
