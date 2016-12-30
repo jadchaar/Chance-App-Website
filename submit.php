@@ -17,7 +17,6 @@ if (isset($_POST['email'])) {
       echo"<html>
 
       <head>
-          <!-- Metadata for website (primarily for search engine crawlers) -->
           <meta charset='UTF-8'>
           <meta name='viewport' content='width=device-width, initial-scale=1.0'>
           <meta name='keywords' content='Chance, Dating'>
@@ -44,9 +43,6 @@ if (isset($_POST['email'])) {
           </noscript>
           <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
           <link href='assets/css/styles.min.css' rel='stylesheet'>
-
-          <style>
-          </style>
       </head>";
       echo "
    <body id='submission-body'>
@@ -118,7 +114,6 @@ function email($to, $from, $from_name, $subject, $message)
 <html>
 
 <head>
-    <!-- Metadata for website (primarily for search engine crawlers) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Chance, Dating">
@@ -132,7 +127,6 @@ function email($to, $from, $from_name, $subject, $message)
 
     <link rel="canonical" href="https://chancedatingapp.com/submit.php" />
 
-    <!-- Load the font using Google WebFont Loader -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
@@ -141,13 +135,10 @@ function email($to, $from, $from_name, $subject, $message)
             }
         });
     </script>
-    <!-- Fallback for fonts if someone has scripts disabled -->
     <noscript>
       <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500" rel="stylesheet">
     </noscript>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Minified CSS for deployment -->
     <link href="assets/css/styles.min.css" rel="stylesheet">
 </head>
 
