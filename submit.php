@@ -14,8 +14,41 @@ if (isset($_POST['email'])) {
   function died($error)
   {
       // your error code can go here
-	echo "<link href='assets/css/styles.min.css' rel='stylesheet'>";
-	echo "
+      echo"<html>
+
+      <head>
+          <!-- Metadata for website (primarily for search engine crawlers) -->
+          <meta charset='UTF-8'>
+          <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+          <meta name='keywords' content='Chance, Dating'>
+          <meta name='description' content='Serendipity happens.'>
+          <meta name='author' content='Jad Chaar'>
+
+          <title>Chance - Serendipity Happens</title>
+
+          <link rel='icon' href='assets/images/favicons/favicon.png'>
+          <link rel='mask-icon' href='/assets/images/favicons/safari-pinned-tab.svg' color='#FF7C7F'>
+
+          <link rel='canonical' href='https://chancedatingapp.com/submit.php' />
+
+          <script src='https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js'></script>
+          <script>
+              WebFont.load({
+                  google: {
+                      families: ['Roboto: 100,300,500']
+                  }
+              });
+          </script>
+          <noscript>
+            <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500' rel='stylesheet'>
+          </noscript>
+          <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
+          <link href='assets/css/styles.min.css' rel='stylesheet'>
+
+          <style>
+          </style>
+      </head>";
+      echo "
    <body id='submission-body'>
       <nav class='navbar navbar-default navbar-fixed-top'>
         <div class='container-fluid'>
@@ -29,30 +62,30 @@ if (isset($_POST['email'])) {
         </div>
     </nav>";
 
-    echo"
-    <div style= 'color: #4FB7FC' align='center' >
-      <h1 > We are very sorry, but there were error(s) found with the form you submitted. </h1>
-      <h2> These errors appear below.  </h2> <br /><br />"
-        . $error.'<br /><br />'
-        .'Please go back and fix these errors.<br /><br />'
+      echo"
+    <div style= 'padding: 25px; color: #4FB7FC;' align='center' >
+      <h1>Error: "
+        .$error.'<br />'
+        .'</h1><h3>Please resubmit your email</h3> <br />'
 
       ."<img alt='Robot' src='assets/images/robot-submission.svg' id='robot-submission'>
-      <br /> <br />
+      <br class='hidden-br'/> <br class='hidden-br'/>
       <a href='https://chancedatingapp.com'><button class='btn btn-default btn-lg'><span class='glyphicon glyphicon-home' aria-hidden='true'></span>&nbsp;&nbsp;Back to Homepage</button></a>
     </div>
-    </body>";
+    </body>
+    </html>";
 
       die();
   }
   // validation expected data exists
   if (!isset($_POST['email'])) {
-      died('We are sorry, but there appears to be a problem with the form you submitted.');
+      died('We are sorry, but there was a problem with the email you entered.');
   }
     $user_email = $_POST['email']; // required
   $error_message = '';
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
     if (!preg_match($email_exp, $user_email)) {
-        $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+        $error_message .= 'Submitted email is invalid';
     }
     if (strlen($error_message) > 0) {
         died($error_message);
