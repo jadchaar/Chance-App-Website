@@ -59,6 +59,7 @@ function email($to, $from, $from_name, $subject, $message)
 ?>
 
 <html>
+
 <head>
     <!-- Metadata for website (primarily for search engine crawlers) -->
     <meta charset="UTF-8">
@@ -72,7 +73,7 @@ function email($to, $from, $from_name, $subject, $message)
     <link rel="icon" href="assets/images/favicons/favicon.png">
     <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#FF7C7F">
 
-    <link rel="canonical" href="https://chancedatingapp.com/submitted" />
+    <link rel="canonical" href="https://chancedatingapp.com/submit.php" />
 
     <!-- Load the font using Google WebFont Loader -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -92,6 +93,7 @@ function email($to, $from, $from_name, $subject, $message)
     <!-- Minified CSS for deployment -->
     <link href="assets/css/styles.min.css" rel="stylesheet">
 </head>
+
 <body id="submission-body">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -105,13 +107,14 @@ function email($to, $from, $from_name, $subject, $message)
         </div>
     </nav>
 
-      <div class="submission-page-text">
+    <div class="submission-page-text">
         <h1>Thank you for your interest in Chance!</h1>
         <h2>Stay tuned for development updates.</h2>
         <br />
         <img alt="Robot" src="assets/images/robot-submission.svg" id="robot-submission">
-        <br /> <br />
+        <br class="hidden-br"/> <br class="hidden-br"/>
         <a href="https://chancedatingapp.com"><button class="btn btn-default btn-lg"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;&nbsp;Back to Homepage</button></a>
-      </div>
+    </div>
 </body>
+
 </html>

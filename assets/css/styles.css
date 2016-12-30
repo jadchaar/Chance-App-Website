@@ -307,15 +307,17 @@ footer h3 {
 .submission-page-text {
     font-size: 48px!important;
     text-align: center;
-    padding-top: 50px;
     color: #4FB7FC!important;
-}
-
-#robot-submission {
-    height: 150px;
+    padding-top: 50px;
 }
 
 #submission-body {
+    font-family: 'Roboto', sans-serif;
+    -moz-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: auto;
+    background-color: #FFFFFF!important;
+    padding-top: 50px!important;
     background-image: url(../images/confirmation-background.svg);
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -331,6 +333,10 @@ footer h3 {
     background-color: #e7686b;
     color: #FFFFFF;
     border-color: #e7686b;
+}
+
+#robot-submission{
+  height:150px;
 }
 
 
@@ -362,6 +368,12 @@ footer h3 {
     }
     .paragraph-padding {
         padding-bottom: 25px!important;
+    }
+    .submission-page-text {
+      padding: 10px 10px!important;
+    }
+    #robot-submission{
+      display: none;
     }
 }
 
