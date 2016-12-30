@@ -438,6 +438,10 @@ footer h3 {
     #robot-submission {
         display: none;
     }
+    #email-text-styling {
+      padding-left: 25px!important;
+      padding-right: 25px!important;
+    }
 }
 
 @media only screen and (max-width:768px) and (orientation: landscape) {
@@ -456,6 +460,10 @@ footer h3 {
     }
     .paragraph-padding {
         padding-bottom: 50px!important;
+    }
+    #email-text-styling {
+      padding-left: 25px!important;
+      padding-right: 25px!important;
     }
 }
 
