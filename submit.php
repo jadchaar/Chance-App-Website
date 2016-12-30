@@ -14,10 +14,34 @@ if (isset($_POST['email'])) {
   function died($error)
   {
       // your error code can go here
-    echo 'We are very sorry, but there were error(s) found with the form you submitted. ';
-      echo 'These errors appear below.<br /><br />';
-      echo $error.'<br /><br />';
-      echo 'Please go back and fix these errors.<br /><br />';
+	echo "<link href='assets/css/styles.min.css' rel='stylesheet'>";
+	echo "
+   <body id='submission-body'>
+      <nav class='navbar navbar-default navbar-fixed-top'>
+        <div class='container-fluid'>
+            <div class='navbar-header'>
+                <a class='navbar-brand' href='https://chancedatingapp.com'>
+                    <div class='brand-centered'>
+                        <img class='logo' alt='Chance Logo' src='assets/images/logo.svg' height='40'>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>";
+
+    echo"
+    <div style= 'color: #4FB7FC' align='center' >
+      <h1 > We are very sorry, but there were error(s) found with the form you submitted. </h1>
+      <h2> These errors appear below.  </h2> <br /><br />"
+        . $error.'<br /><br />'
+        .'Please go back and fix these errors.<br /><br />'
+
+      ."<img alt='Robot' src='assets/images/robot-submission.svg' id='robot-submission'>
+      <br /> <br />
+      <a href='https://chancedatingapp.com'><button class='btn btn-default btn-lg'><span class='glyphicon glyphicon-home' aria-hidden='true'></span>&nbsp;&nbsp;Back to Homepage</button></a>
+    </div>
+    </body>";
+
       die();
   }
   // validation expected data exists
