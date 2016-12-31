@@ -48,7 +48,7 @@ function email($to, $from, $from_name, $subject, $message)
 function died($error)
 {
     ?>
-  <!DOCTYPE html>
+
   <html lang="en">
   <head>
     <meta charset='UTF-8'>
@@ -67,7 +67,7 @@ function died($error)
     <script>
         WebFontConfig = {
             google: {
-                families: ['Roboto:100,300,500']
+                families: ['Roboto:300,500']
             }
         };
 
@@ -79,13 +79,10 @@ function died($error)
         })(document);
     </script>
     <noscript>
-      <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Roboto:300,500' rel='stylesheet'>
     </noscript>
     <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
     <link href='assets/css/styles.min.css' rel='stylesheet'>
-
-    <style>
-    </style>
   </head>
   <body id='submission-body'>
     <nav class='navbar navbar-default navbar-fixed-top'>
@@ -99,12 +96,19 @@ function died($error)
         </div>
       </div>
     </nav>
+
     <div style= 'padding: 25px; color: #4FB7FC;' align='center' >
-      <h1>Error: <?php echo $error; ?></h1><br><h3>Please resubmit your email</h3><br><img alt='Robot' src='assets/images/robot-submission.svg' id='robot-submission'>
-      <br class='hidden-br'/> <br class='hidden-br'/>
+      <h1>Error: <?php echo $error; ?></h1>
+      <br />
+      <h3>Please resubmit your email</h3>
+      <br />
+      <img alt='Robot' src='assets/images/robot-submission.svg' id='robot-submission'>
+      <br /> <br class='hidden-br'/>
       <a href='https://chancedatingapp.com'><button class='btn btn-default btn-lg'><span class='glyphicon glyphicon-home' aria-hidden='true'></span>&nbsp;&nbsp;Back to Homepage</button></a>
     </div>
+
   </body>
+
   </html>
 
   <?php
@@ -112,7 +116,6 @@ function died($error)
 }
 ?>
 
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -132,7 +135,7 @@ function died($error)
   <script>
       WebFontConfig = {
           google: {
-              families: ['Roboto:100,300,500']
+              families: ['Roboto:300,500']
           }
       };
 
@@ -144,7 +147,7 @@ function died($error)
       })(document);
   </script>
   <noscript>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
   </noscript>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="assets/css/styles.min.css" rel="stylesheet">
@@ -171,6 +174,7 @@ function died($error)
     <br class="hidden-br"/> <br class="hidden-br"/>
     <a href="https://chancedatingapp.com"><button class="btn btn-default btn-lg"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;&nbsp;Back to Homepage</button></a>
   </div>
+
 </body>
 
 </html>

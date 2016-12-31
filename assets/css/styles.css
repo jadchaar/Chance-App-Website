@@ -321,6 +321,7 @@ footer h3 {
     background-image: url(../images/confirmation-background.svg);
     background-repeat: no-repeat;
     background-position: bottom center;
+    background-size: auto;
 }
 
 .btn {
@@ -341,69 +342,6 @@ footer h3 {
 
 
 /* Submission Styling ENDS */
-
-
-/* Email Styling BEGINS */
-
-#email-body {
-    padding-top: 0px!important;
-}
-
-#email-body .navbar {
-    background-color: transparent;
-    border: 0;
-}
-
-#email-text-styling {
-    padding-left: 300px;
-    padding-right: 300px;
-    text-align: center;
-}
-
-#email-body h2 {
-    color: #4FB7FC;
-    font-weight: 500;
-}
-
-#email-body h3 {
-    color: #444;
-    font-weight: 300;
-}
-
-#email-body h4, h5 {
-    color: #666;
-    font-weight: 100;
-}
-
-#email-body a {
-    cursor: pointer;
-    text-decoration: none;
-}
-
-#email-body a:link, a:visited {
-    color: #265C83!important;
-}
-
-@media (hover: hover) {
-    #email-body a:hover {
-        color: #7FDBFF!important;
-    }
-}
-
-@media (hover: none) {
-    #email-body a:hover {
-        color: #265C83!important;
-    }
-}
-
-#email-body a:active {
-    -webkit-transition: color .3s;
-    transition: color .3s;
-    color: #0074D9!important;
-}
-
-
-/* Email Styling ENDS */
 
 @media only screen and (max-width:768px) and (orientation: portrait) {
     header {
@@ -438,10 +376,6 @@ footer h3 {
     #robot-submission {
         display: none;
     }
-    #email-text-styling {
-      padding-left: 25px!important;
-      padding-right: 25px!important;
-    }
 }
 
 @media only screen and (max-width:768px) and (orientation: landscape) {
@@ -460,10 +394,6 @@ footer h3 {
     }
     .paragraph-padding {
         padding-bottom: 50px!important;
-    }
-    #email-text-styling {
-      padding-left: 25px!important;
-      padding-right: 25px!important;
     }
 }
 
