@@ -32,15 +32,6 @@ nav {
     padding-top: 2em;
 }
 
-.show {
-    width: 100%!important;
-    height: 40px!important;
-}
-
-.no-show {
-    display: none;
-}
-
 .brand-centered .navbar-brand {
     display: -webkit-box;
     display: -ms-flexbox;
