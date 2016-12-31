@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     -moz-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-rendering: auto;
@@ -25,12 +25,8 @@ hr {
 }
 
 .container {
-  padding-top: .25em;
-  padding-bottom: .25em;
-}
-
-#email-body h2 {
-    font-size: 36px;
+    padding-top: .25em;
+    padding-bottom: .25em;
 }
 
 #email-text-styling {
@@ -42,17 +38,25 @@ hr {
 
 #email-body h2 {
     color: #4FB7FC;
-    font-weight: 500;
+    font-size: 36px;
 }
 
 #email-body h3 {
     color: #444;
     font-weight: 300;
+    font-size: 24px;
 }
 
-#email-body h4, h5 {
+#email-body h4 {
     color: #666;
     font-weight: 300;
+    font-size: 16px;
+}
+
+#email-body h5 {
+    color: #666;
+    font-weight: 300;
+    font-size: 14px;
 }
 
 #email-body a {
