@@ -5,39 +5,32 @@
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,500' rel='stylesheet'>
-    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
+    <link href='assets/css/email-styles.min.css' rel='stylesheet'>
 
     <style>
-      body,nav{background-color:#FFF!important}body{font-family:Roboto,sans-serif;-moz-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;text-rendering:auto;color:#444}.navbar-brand{height:50px}.brand-centered{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:absolute;width:100%;left:0;top:0}.top-image-padding{padding-top:2em}.show{width:100%!important;height:40px!important}.no-show{display:none}.brand-centered .navbar-brand{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}hr{margin:2em}#email-body{padding-top:0!important}#email-body .navbar{background-color:transparent;border:0}#email-text-styling{margin:0 auto;max-width:40em;text-align:center}#email-body h2{color:#4FB7FC;font-weight:500}#email-body h3{color:#444;font-weight:300}#email-body h4,h5{color:#666;font-weight:300}#email-body a{cursor:pointer;text-decoration:none}#email-body a:link,a:visited{color:#265C83!important}@media (hover:hover){#email-body a:hover{color:#7FDBFF!important}}@media (hover:none){#email-body a:hover{color:#265C83!important}}#email-body a:active{-webkit-transition:color .3s;transition:color .3s;color:#0074D9!important}
+
     </style>
 </head>
 
 <body id='email-body'>
-    <nav class='navbar navbar-default navbar-static-top'>
-        <div class='container-fluid'>
-            <div class='navbar-header'>
-                <a class='navbar-brand' href='https://chancedatingapp.com'>
-                    <div class='brand-centered'>
-                        <div class='top-image-padding'>
-                            <img src='https://chancedatingapp.com/assets/images/logo.png' alt='Chance Logo' height='40'>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </nav>
+    <div class='image-padding brand-centered'>
+        <a href='https://chancedatingapp.com'>
+            <img src='https://chancedatingapp.com/assets/images/logo.png' alt='Chance Logo' height='40'>
+        </a>
+    </div>
 
-    <div class='container-fluid'>
-        <div id='email-text-styling'>
-            <br />
-            <hr />
-            <h2>Thank you for supporting Chance!</h2>
-            <h3>As a valued user, your feedback is greatly appreciated.</h3>
-            <h3>Please do not hesitate to reach out with any inquiries regarding the app and its development.</h3>
-            <hr />
+    <div id='email-text-styling'>
+        <hr />
+        <div class='container'>
+          <h2>Thank you for supporting Chance!</h2>
+          <h3>As a valued user, your feedback is greatly appreciated.</h3>
+          <h3>Please do not hesitate to reach out with any inquiries regarding the app and its development.</h3>
+        </div>
+        <hr />
+        <footer>
             <h4>You're receiving this email because you opted in on our website.</h4>
             <h5><a href='mailto:chancedatingapp@gmail.com?subject=UNSUBSCRIBE'>Unsubscribe</a></h5>
-        </div>
+        </footer>
     </div>
 </body>
 

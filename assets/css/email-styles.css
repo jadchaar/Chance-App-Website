@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
     -moz-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-rendering: auto;
@@ -7,56 +7,34 @@ body {
     color: #444444;
 }
 
-nav {
-    background-color: #FFFFFF!important;
-}
-
-.navbar-brand {
-    height: 50px;
+.image-padding {
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .brand-centered {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-}
-
-.top-image-padding {
-    padding-top: 2em;
-}
-
-.brand-centered .navbar-brand {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    margin: 0 auto;
+    text-align: center;
 }
 
 hr {
-    margin: 2em;
-}
-
-#email-body {
-    padding-top: 0px!important;
-}
-
-#email-body .navbar {
-    background-color: transparent;
+    margin: 1em;
     border: 0;
+    height: 1px;
+    background: #666;
+}
+
+.container {
+  padding-top: .25em;
+  padding-bottom: .25em;
+}
+
+#email-body h2 {
+    font-size: 36px;
 }
 
 #email-text-styling {
-    /*padding-left: 300px;
-    padding-right: 300px;*/
+    line-height: 1;
     margin: 0 auto;
     max-width: 40em;
     text-align: center;
@@ -102,4 +80,8 @@ hr {
     -webkit-transition: color .3s;
     transition: color .3s;
     color: #0074D9!important;
+}
+
+footer {
+    line-height: 0em;
 }
