@@ -4,7 +4,6 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: auto;
     background-color: #FFFFFF!important;
-    padding-top: 50px;
     color: #444444;
 }
 
@@ -29,6 +28,19 @@ nav {
     top: 0;
 }
 
+.top-image-padding {
+    padding-top: 2em;
+}
+
+.show {
+    width: 100%!important;
+    height: 40px!important;
+}
+
+.no-show {
+    display: none;
+}
+
 .brand-centered .navbar-brand {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -38,9 +50,8 @@ nav {
     align-items: center;
 }
 
-.logo {
-    vertical-align: middle!important;
-    padding-top: 10px!important;
+hr {
+    margin: 2em;
 }
 
 #email-body {
@@ -53,8 +64,10 @@ nav {
 }
 
 #email-text-styling {
-    padding-left: 300px;
-    padding-right: 300px;
+    /*padding-left: 300px;
+    padding-right: 300px;*/
+    margin: 0 auto;
+    max-width: 40em;
     text-align: center;
 }
 
@@ -98,18 +111,4 @@ nav {
     -webkit-transition: color .3s;
     transition: color .3s;
     color: #0074D9!important;
-}
-
-@media only screen and (max-width:768px) and (orientation: portrait) {
-    #email-text-styling {
-      padding-left: 25px!important;
-      padding-right: 25px!important;
-    }
-}
-
-@media only screen and (max-width:768px) and (orientation: landscape) {
-    #email-text-styling {
-      padding-left: 25px!important;
-      padding-right: 25px!important;
-    }
 }
