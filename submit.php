@@ -15,7 +15,8 @@ if (isset($_POST['email'])) {
   function died($error)
   {
       // your error code can go here
-      echo"<html>
+      echo"<!DOCTYPE html>
+      <html lang="en">
 
       <head>
           <meta charset='UTF-8'>
@@ -199,7 +200,8 @@ function died($error)
 }
 ?>
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <!-- Metadata for website (primarily for search engine crawlers) -->
