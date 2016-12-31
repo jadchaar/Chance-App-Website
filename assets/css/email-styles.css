@@ -53,18 +53,13 @@ hr {
     font-size: 16px;
 }
 
-#email-body h5 {
-    color: #666;
-    font-weight: 300;
-    font-size: 14px;
-}
-
 #email-body a {
     cursor: pointer;
     text-decoration: none;
 }
 
-#email-body a:link, a:visited {
+#email-body a:link,
+a:visited {
     color: #265C83!important;
 }
 
@@ -84,8 +79,4 @@ hr {
     -webkit-transition: color .3s;
     transition: color .3s;
     color: #0074D9!important;
-}
-
-footer {
-    line-height: 0em;
 }
