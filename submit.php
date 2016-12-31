@@ -7,7 +7,7 @@ $internal_sender_name = 'Server';
 $external_sender_name = 'Chance Team';
 $internal_email_subject = 'New Chance User';
 $external_email_subject = 'Subscriber Confirmation';
-$external_email_message = "Hello and thanks for your interest in chance.  This email confirms that we know you are interested in our application.  We'll let you know as soon as we release the app";
+$external_email_message = file_get_contents("email_template.html");
 //END CONFIG
 
 // validation expected data exists
@@ -23,29 +23,28 @@ if (!preg_match($email_exp, $user_email)) {
 if (strlen($error_message) > 0) {
   died($error_message);
 }
-$email_message = "Form details below.\n\n";
+$email_message = "Form details below.<br><br>";
 function clean_string($string)
 {
   $bad = array('content-type', 'bcc:', 'to:', 'cc:', 'href');
 
   return str_replace($bad, '', $string);
 }
-$email_message .= 'Email: '.clean_string($user_email)."\n";
+$email_message .= 'Email: '.clean_string($user_email);
 
 file_put_contents('email_list.txt', $user_email.PHP_EOL, FILE_APPEND);
 // create email headers
 email($email_internal_to, $internal_sender_email, $internal_sender_name, $internal_email_subject, $email_message); //internal email
 email($user_email, $external_sender_email, $external_sender_name, $external_email_subject, $external_email_message); //external email to user
 
-function email($to, $from, $from_name, $subject, $message)
-{
-  $headers = 'From: "'.$from_name.'" <'.$from.">\r\n".
-  'Reply-To: "'.$from_name.'" <'.$from.">\r\n".
-  'X-Mailer: PHP/'.phpversion();
-  @mail($to, $subject, $message, $headers);
+function email($to, $from, $from_name, $subject, $message){
+  $headers[] = 'MIME-Version: 1.0';
+  $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+  $headers[] = 'From: "'.$from_name.'" <'.$from.'>';
+  $headers[] = 'Reply-To: "'.$from_name.'" <'.$from.'>';
+  @mail($to, $subject, $message, implode("\r\n", $headers));
 }
-function died($error)
-{
+function died($error){
   ?>
   <html>
   <head>
